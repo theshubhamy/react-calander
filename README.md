@@ -1,71 +1,37 @@
-# Getting Started with Create React App
+# Pre-Interview Development Exercise
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The following is a practical programming test designed to allow you to showcase your development skills and form a point of technical discussion in any forthcoming interview.
 
-## Available Scripts
+We expect you will be able to submit the "correct" solution, so we are looking for coding standards and techniques that stand out.
 
-In the project directory, you can run:
+You should submit a complete, well-thought-out solution and are advised to pay particular attention to the requirements. This exercise should take no more than 2 hours.
 
-### `npm start`
+Good Luck!
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## React Calendar
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+An organisation is building a React component library, which various front-end React solutions can import and use in their projects.
 
-### `npm test`
+A new reusable calendar component has been requested to add to the component library: `<Calendar date={someDate} />`. Your task is to implement this component.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This component should use the date prop and render a simple calendar for the given date's year and month, with its date highlighted. See [cal-2022-10-03.png](./cal-2022-10-03.png) for an example of what the calendar component might render if the date of 03/10/2022 was passed in as a prop. Likewise, a calendar with a date prop of 23/03/2020 might render [cal-2020-03-23.png](./cal-2020-03-23.png).
 
-### `npm run build`
+You may implement this component in React TypeScript or React JavaScript. You may use CSS modules or any other style or class utility library, such as TailwindCSS, for styling. You may use an appropriate bootstrapping tool, such as Create React App, to get started:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+`npx create-react-app cal --template typescript`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Requirements
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- A reusable calendar component which has a `date` prop.
+- The first row of the calendar should display the `date` prop's month and year.
+- The second row of the calendar should display the days of the week, one per column.
+- The following rows should display the dates for the `date` prop's month and year, appropriately aligned with the day headings.
+- The appropriate date cell should be highlighted based on the `date` prop.
 
-### `npm run eject`
+Pay attention to the following:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-"# react-calender" 
+- Showing the component can take a date prop and renders the correct calendar through a set of component tests. You may use tools such as `react-testing-library` to achieve this, or other methods.
+- Good code and component separation of concerns.
+- Careful consideration of what types are used in the solution.
+- Suitable use of JavaScript libraries and functional programming techniques where appropriate.
+- Clear and easy to understand JavaScript / TypeScript code.
