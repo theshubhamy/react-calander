@@ -1,0 +1,40 @@
+.calendar {
+  font-family: Arial, sans-serif;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 8px;
+  width: 360px;
+}
+
+.header {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.month {
+  color: blueviolet;
+  font-size: 20px;
+  padding: 10px 0px;
+}
+.daysOfWeek {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  font-size: medium;
+}
+
+.dates {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 8px;
+}
+
+.dateCell {
+  border: 1px solid black;
+}
+
+.currentDay {
+  background: blueviolet;
+  border: 1px sloid black;
+  border-radius: 4px;
+}
